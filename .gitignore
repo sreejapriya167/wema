@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+backend/logs/
+frontend/.vite/
+__pycache__/
+*.pyc
+.pytest_cache/
+
