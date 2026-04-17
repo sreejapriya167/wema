@@ -7,8 +7,16 @@ WEMA is a prototype platform designed for **Zomato** and **Swiggy** riders in In
 WEMA is designed to detect disruption events, verify whether the rider was actively working in the affected zone, estimate lost income, and trigger a payout approval workflow with minimal manual effort.
 
 ---
+
+## Pitch Deck
+
+[View Pitch Deck](https://docs.google.com/presentation/d/1N79zMEmyUgxhjwrqYr_djrNbgKPwDzHu)
+
+---
+
 ## Table of Contents
 
+- [Pitch Deck](#pitch-deck)
 - [The problem](#the-problem)
 - [Phase 2 updates](#phase-2-updates)
 - [Phase 3 updates](#phase-3-updates)
@@ -25,44 +33,49 @@ WEMA is designed to detect disruption events, verify whether the rider was activ
 - [Where we are](#where-we-are)
 - [Why just food delivery for now](#why-just-food-delivery-for-now)
 
+---
+
 Income protection for food delivery riders. When an environmental or social calamity hits your zone and you can't work - WEMA pays you automatically. No claim forms. No waiting. No calls.
 
 Built for Zomato/Swiggy riders in India.
 
 ---
+
 ## Phase 2 updates
 
 Phase 2 focused on making WEMA closer to a real, deployable system rather than just a prototype.
 
-- Improved disruption detection using combined signals (NewsAPI + order volume anomaly detection) for better bandh/strike identification
-- Strengthened rider verification logic without relying on Zomato/Swiggy APIs using shift tracking and delivery state proxies
-- Enhanced fraud detection to handle coordinated spoofing attempts and edge-case GPS inconsistencies
-- Refined payout logic to make calculations faster and closer to real-time
-- Improved system reliability across multiple conditions and edge cases discovered during Phase 1
+- Improved disruption detection using combined signals (NewsAPI + order volume anomaly detection) for better bandh/strike identification  
+- Strengthened rider verification logic without relying on Zomato/Swiggy APIs using shift tracking and delivery state proxies  
+- Enhanced fraud detection to handle coordinated spoofing attempts and edge-case GPS inconsistencies  
+- Refined payout logic to make calculations faster and closer to real-time  
+- Improved system reliability across multiple conditions and edge cases discovered during Phase 1  
 
 This phase was about turning assumptions into working systems and stress-testing the logic under more realistic scenarios.
 
+---
+
 ## The problem
 
-Eshwar is a Zomato rider in Hyderabad. On a good week he makes ₹3,500. During monsoon season, a single bad evening wipes out ₹400–600 of that -- not because he got hurt, not because his bike broke down, but because it rained so hard no one was ordering and the roads were underwater.
+Eshwar is a Zomato rider in Hyderabad. On a good week he makes ₹3,500. During monsoon season, a single bad evening wipes out ₹400–600 of that — not because he got hurt, not because his bike broke down, but because it rained so hard no one was ordering and the roads were underwater.
 
 He has no paid leave. There's no "call in sick" when you're gig. Every hour he can't ride is money he simply doesn't have.
 
 Existing insurance products don't solve this. They cover hospital bills, bike damage, death. None of them cover the thing that actually hurts Eshwar every monsoon: **he couldn't work, so he didn't earn.**
 
 ---
+
 ## Phase 3 updates
 
 Phase 3 focused on making WEMA more intelligent, automated, and closer to a real-world deployable system.
 
-- Introduced dynamic premium calculation based on rider earnings, expected loss during disruptions, and type of calamity
-- Improved payout accuracy by linking calculations directly to time-based earning patterns instead of fixed estimates
-- Integrated multiple APIs (weather, air quality, and social signals) to make disruption detection more reliable and real-time
-- Enhanced system automation — from trigger detection to payout decision — reducing manual intervention
-- Strengthened system scalability by structuring workflows to handle real-time events and multiple riders simultaneously
+- Introduced dynamic premium calculation based on rider earnings, expected loss during disruptions, and type of calamity  
+- Improved payout accuracy by linking calculations directly to time-based earning patterns instead of fixed estimates  
+- Integrated multiple APIs (weather, air quality, and social signals) to make disruption detection more reliable and real-time  
+- Enhanced system automation — from trigger detection to payout decision — reducing manual intervention  
+- Strengthened system scalability by structuring workflows to handle real-time events and multiple riders simultaneously  
 
 This phase was about moving from a working system to a smarter, adaptive system that reacts to real-world conditions.
-
 ## What WEMA does
 
 WEMA monitors weather events and social disruptions across delivery zones. When a calamity hits — a flood, a cyclone, a sudden bandh — WEMA checks which riders had an active delivery at that moment, verifies their GPS puts them in the affected area, runs a fraud check, and sends money directly to their UPI account.
