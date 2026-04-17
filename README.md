@@ -41,6 +41,15 @@ Built for Zomato/Swiggy riders in India.
 
 ---
 
+## The problem
+
+Eshwar is a Zomato rider in Hyderabad. On a good week he makes ₹3,500. During monsoon season, a single bad evening wipes out ₹400–600 of that — not because he got hurt, not because his bike broke down, but because it rained so hard no one was ordering and the roads were underwater.
+
+He has no paid leave. There's no "call in sick" when you're gig. Every hour he can't ride is money he simply doesn't have.
+
+Existing insurance products don't solve this. They cover hospital bills, bike damage, death. None of them cover the thing that actually hurts Eshwar every monsoon: **he couldn't work, so he didn't earn.**
+
+---
 ## Phase 2 updates
 
 Phase 2 focused on making WEMA closer to a real, deployable system rather than just a prototype.
@@ -52,16 +61,6 @@ Phase 2 focused on making WEMA closer to a real, deployable system rather than j
 - Improved system reliability across multiple conditions and edge cases discovered during Phase 1  
 
 This phase was about turning assumptions into working systems and stress-testing the logic under more realistic scenarios.
-
----
-
-## The problem
-
-Eshwar is a Zomato rider in Hyderabad. On a good week he makes ₹3,500. During monsoon season, a single bad evening wipes out ₹400–600 of that — not because he got hurt, not because his bike broke down, but because it rained so hard no one was ordering and the roads were underwater.
-
-He has no paid leave. There's no "call in sick" when you're gig. Every hour he can't ride is money he simply doesn't have.
-
-Existing insurance products don't solve this. They cover hospital bills, bike damage, death. None of them cover the thing that actually hurts Eshwar every monsoon: **he couldn't work, so he didn't earn.**
 
 ---
 
